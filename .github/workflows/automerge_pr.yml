@@ -7,7 +7,7 @@ permissions:
   pull-requests: write
 
 jobs:
-  dependabot:
+  exercism-solutions-syncer:
     runs-on: ubuntu-latest
     if: ${{ contains(fromJson('["exercism-solutions-syncer[bot]"]'), github.actor) }}
     steps:
